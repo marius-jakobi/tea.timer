@@ -30,8 +30,13 @@ body {
 
 .buttons > button {
     padding: 1em;
+    margin: 1rem 0;
     background-color: #444444;
     color: white;
     border: 1px solid white;
     cursor: pointer;
+}
+
+.links > a {
+    color: white;
 }
