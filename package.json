@@ -1,0 +1,12 @@
+{
+    "name": "tea.timer",
+    "version": "1.0.0",
+    "description": "A JS tea timer with browser notification",
+    "main": "app.js",
+    "scripts": {
+        "build": "rm ./dist/* && cp ./src/* ./dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
