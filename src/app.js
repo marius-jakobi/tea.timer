@@ -10,11 +10,15 @@ if (Notification.permission !== "granted") {
 }
 
 function setTimer() {
-    let minutes = isNaN(parseInt(inputMinutes.value)) ? 0 : parseInt(inputMinutes.value);
-    let seconds = minutes > 0 ? 0 : parseInt(inputSeconds.value);
+    let minutes = parseInt(inputMinutes.value);
+    let seconds = parseInt(inputSeconds.value);
 
-    if (isNaN(seconds)) {
+    if (isNaN(seconds) || isNaN(minutes) || (minutes == 0 && seconds == 0)) {
         return alert("Please set time");
+    }
+
+    if (minutes < 0 || seconds < 0) {
+        return alert("Values must be positive");
     }
 
     if (interval) {
